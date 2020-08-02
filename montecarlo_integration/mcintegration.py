@@ -2,7 +2,7 @@
 BY JOHN S., aka johnhs3. CA. 2020
 A simple Monte-Carlo Integration schema for finding the area of a shaded region relative to some 2d, rectangular domain.
 To use it just place an image (B&W only, crisp edges on region) into the same dir. as the script, then run.
-Works better for larger image resolution, in general gets error less than .1% for n>100000.
+Works better for larger image resolution, in general gets error less than 0.1% for n>100000 and images <= 1000x1000.
 
 ideas for later:
 -Axes: In another color (maybe red), make it so that you can place a set of axes in your images and the MC counter won't
@@ -14,7 +14,9 @@ width/height (within some epsilon for fencepost), then returns a warning if they
 -
 -Better getPixel method
 -
--compute O(n) and 
+-compute O(n) and Om(n) for time, based on parameters w,h,n.
+-Make check for large n / large w x h to disp. "WARNING: This may take awhile" message
+-
 
 '''
 
