@@ -7,6 +7,7 @@
 
    Functionality will be expanded later to include multiple algorithms.
 '''
+#WARNING: This is terrible and broken. Don't use it. I'll make it better at a later date
 
 import math
 
